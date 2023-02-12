@@ -31,23 +31,16 @@ def status():
 
     #checking for the initial start command
     if index == 0:
-        print('ready with an index of 0')
         window['status'].update('Ready')
-        return 'Ready'
     #checks if a device disconnects, making it available again
     elif index == 1:
-        print('ready with an index of 1')
         window['status'].update('Ready')
-        return 'Ready'
     #checks if a device is connected
     elif index == 2:
-        print('connected with an index of 2')
         window['status'].update('Connected')
-        return 'Connected'
     #if all the things above fail, it will set the text to starting(i have never had that happen to me)
     else:
         window['status'].update('Starting')
-        return 'Starting'
     
 
 
